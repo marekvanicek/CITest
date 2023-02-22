@@ -11,7 +11,6 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "ci": "pnpm run type-check && pnpm run lint && pnpm run test:unit && pnpm run test:e2e"
   },
   "dependencies": {
     "vue": "^3.2.45"
