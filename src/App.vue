@@ -5,12 +5,6 @@ import TheWelcome from './components/TheWelcome.vue'
 const heybro = (num?: number) => {
     return num + 22;
 }
-
-const bro = () => {
-    console.log('dasjkdasjkdsahjkasdhjkasdhjkdashjkadskhjadhjsadsjkhjkdashjkasdhjkasdjkadsjkadshjkasdhjkadhjsadhjskadjskkadhjsadhjskhjkasdkadhjsk')
-}
-
-
 </script>
 
 <template>
