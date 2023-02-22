@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
-
-const heybro = (num: number) => {
-    return num + 22;
-}
 </script>
 
 <template>

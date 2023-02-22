@@ -77,7 +77,7 @@ module.exports = {
                 code: 130,
                 ignoreComments: true,
                 ignoreUrls: true,
-                ignoreStrings: false,
+                ignoreStrings: true,
                 ignoreTemplateLiterals: true,
                 ignoreRegExpLiterals: true,
                 ignoreHTMLAttributeValues: true,
