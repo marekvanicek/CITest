@@ -4,25 +4,27 @@ export interface Props {
     posted: string
 }
 
- const props = defineProps<Props>()
+const props = defineProps<Props>()
 
 
 </script>
+
 <template>
     <div class="post-content">
         <h1 class="post-content__title">
-            <slot name="title"></slot>
+            <slot name="title" />
         </h1>
         <div class="post-content__meta">
-            <p>author: <span>{{ author }}</span></p>
-            <p>posted: <span>{{ posted }}</span></p>
+            <p>author: <span>{{ props.author }}</span></p>
+            <p>posted: <span>{{ props.posted }}</span></p>
         </div>
 
         <div class="post-content__content">
-            <slot name="content"></slot>
+            <slot name="content" />
         </div>
     </div>
 </template>
+
 <style scoped lang="scss">
     .post-content {
         @apply p-4 bg-red-300 flex flex-col;
