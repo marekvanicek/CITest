@@ -2,9 +2,7 @@
 </script>
 
 <template>
-    <div class="bg-red-300 p-4">
-        hello world :)
-    </div>
+    <div class="bg-red-300 p-4" />
 </template>
 
 <style lang="scss">
