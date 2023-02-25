@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { watchEffect } from 'vue';
-
 export interface Props {
     loggedIn: boolean
 }
