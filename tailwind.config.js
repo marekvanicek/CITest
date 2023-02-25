@@ -5,7 +5,9 @@ module.exports = {
         './src/**/*.{js,ts,jsx,tsx,vue}',
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: { inter: 'Inter', 'jetbrains-mono': 'JetBrains Mono' },
+        },
     },
     plugins: [],
 }
