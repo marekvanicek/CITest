@@ -41,9 +41,8 @@ describe('Header', () => {
         expect(button.text()).toBe('Log Out')
 
         await button.trigger('click')
-
-        button = wrapper.find('button')
-        expect(button.text()).toBe('Log In')
+        
+        expect(wrapper.emitted()).toHaveProperty('update:loggedIn')
     })
 })
 

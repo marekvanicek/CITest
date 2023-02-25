@@ -1,8 +1,12 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+import HeaderLayout from '../components/HeaderLayout.vue'
+const loggedIn = ref(true)
 </script>
 
 <template>
-    <div class="bg-red-300 p-4" />
+<HeaderLayout v-model:logged-in="loggedIn"/>
+{{ loggedIn }}
 </template>
 
 <style lang="scss">

@@ -1,36 +1,25 @@
 <script setup lang="ts">
-import { ref, watchEffect } from 'vue';
+import { watchEffect } from 'vue';
 
 export interface Props {
     loggedIn: boolean
 }
 
 const props = defineProps<Props>()
-const loggedInLocal = ref(false)
 
-watchEffect(() => {
-    loggedInLocal.value = props.loggedIn
-})
-
-const logIn = () => {
-    loggedInLocal.value = true
-}
-
-const logOut = () => {
-    loggedInLocal.value = false
-}
-
+const emit = defineEmits<{(e: 'update:loggedIn', value: boolean): void}>()
 </script>
 
 <template>
+    {{ props.loggedIn }}
     <div class="header">
         <h1 class="header__title">
             CITest
         </h1>
-        <button v-if="!loggedInLocal" type="button" @click="logIn">
+        <button v-if="!props.loggedIn" type="button" @click="emit('update:loggedIn', !props.loggedIn)">
             Log In
         </button>
-        <button v-else type="button" @click="logOut">
+        <button v-else type="button" @click="emit('update:loggedIn', !props.loggedIn)">
             Log Out
         </button>
     </div>
