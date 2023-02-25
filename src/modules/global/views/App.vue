@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import HeaderLayout from '../components/HeaderLayout.vue'
-const loggedIn = ref(true)
+const loggedIn = ref(false)
 </script>
 
 <template>
 <HeaderLayout v-model:logged-in="loggedIn"/>
-{{ loggedIn }}
+<p class="msg">{{loggedIn? 'secret message' : 'normal message'}}</p>
 </template>
 
 <style lang="scss">

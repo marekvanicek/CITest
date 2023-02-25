@@ -11,7 +11,6 @@ const emit = defineEmits<{(e: 'update:loggedIn', value: boolean): void}>()
 </script>
 
 <template>
-    {{ props.loggedIn }}
     <div class="header">
         <h1 class="header__title">
             CITest
