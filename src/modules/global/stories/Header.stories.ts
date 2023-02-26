@@ -3,7 +3,7 @@ import Header from '@global/components/HeaderLayout.vue'
 import type { Meta } from '@storybook/vue3';
 
 export default {
-    title: 'Header',
+    title: 'Layout/Header',
     component: Header,
 } as Meta<typeof Header>;
 
