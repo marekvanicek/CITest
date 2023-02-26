@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import HeaderLayout from '../components/HeaderLayout.vue'
+import HeaderLayout from '@global/components/HeaderLayout.vue'
 const loggedIn = ref(false)
 </script>
 

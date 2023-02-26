@@ -6,7 +6,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      // "@/global": ["./src/modules/global"],
+      "@global/*": ["./src/modules/global/*"],
     }
   }
 }

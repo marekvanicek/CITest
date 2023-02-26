@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import { mount } from '@vue/test-utils'
-import Header from '../components/HeaderLayout.vue'
+import Header from '@global/components/HeaderLayout.vue'
 
 describe('Header', () => {
     test('When logged in, the logout button is visible', () => {

@@ -1,4 +1,4 @@
-import Header from '../components/HeaderLayout.vue'
+import Header from '@global/components/HeaderLayout.vue'
 
 import type { Meta } from '@storybook/vue3';
 
